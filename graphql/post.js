@@ -36,7 +36,7 @@ var queryType = new graphql.GraphQLObjectType({
     name: 'Query',
     fields: {
         //first query to select all
-        Posts: {
+        post: {
             type: graphql.GraphQLList(PostType),
             resolve: (root, args, context, info) => {
                 return new Promise((resolve, reject) => {
